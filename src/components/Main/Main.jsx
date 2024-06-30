@@ -39,23 +39,35 @@ const Main = () => {
             </div>
             <div className="cards">
               <div className="card" onClick={() =>
-									handleCardClick("Suggest Some Place To Visit In Kerala")
+									handleCardClick("What strategies should I follow to become top of my class")
 								}
 							 >
-		      <p> kerala </p>
+		      <p> What strategies should I follow to become top of my class</p>
                 
                 <img src={assets.bulb_icon} alt="" />
               </div>
-              <div className="card">
-                <p>Explain the steps to make gf</p>
+		    
+              <div className="card" onClick={() =>
+									handleCardClick("I want to learn coding, but I need help figuring out how to start.")
+								}
+							 >
+                <p> I want to learn coding, but I need help figuring out how to start.</p>
                 <img src={assets.code_icon} alt="" />
               </div>
-              <div className="card">
-                <p>Help me get 100 out of 100 marks in class using notes.abhaypp.com</p>
+		    
+              <div className="card" onClick={() =>
+									handleCardClick("I'm having trouble grasping maths concepts")
+								}
+							 >
+                <p>I'm having trouble grasping maths concepts</p>
                 <img src={assets.compass_icon} alt="" />
               </div>
-              <div className="card">
-                <p>What is abhaypp.com</p>
+		    
+              <div className="card" onClick={() =>
+									handleCardClick("I'm passionate about editing and want to pursue it as a career. What are the best steps I can take to get started")
+								}
+							 >
+                <p>I'm passionate about editing and want to pursue it as a career. What are the best steps I can take to get started</p>
                 <img src={assets.image_icon} alt="" />
               </div>
             </div>
