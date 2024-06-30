@@ -100,7 +100,7 @@ const Main = () => {
               <span>
                 {" "}
                 <img
-                  src=
+                  src=""
                   alt=""
                   data-tooltip-id="use-microphone"
                   data-tooltip-content="Use microphone"
