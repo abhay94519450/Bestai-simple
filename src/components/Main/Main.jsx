@@ -20,8 +20,7 @@ const Main = () => {
 	const handleCardClick = (promptText) => {
 			setInput(promptText);
 		};
-  return
-	  (
+  return  (
     <div className="main">
       <div className="nav">
         <p>AskAi</p>
