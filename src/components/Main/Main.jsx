@@ -64,10 +64,10 @@ const Main = () => {
               </div>
 		    
               <div className="card" onClick={() =>
-									handleCardClick("I'm passionate about editing and want to pursue it as a career. What are the best steps I can take to get started")
+									handleCardClick("I'm passionate about editing and want to pursue it as a career.")
 								}
 							 >
-                <p>I'm passionate about editing and want to pursue it as a career. What are the best steps I can take to get started</p>
+                <p>I'm passionate about editing and want to pursue it as a career.</p>
                 <img src={assets.image_icon} alt="" />
               </div>
             </div>
