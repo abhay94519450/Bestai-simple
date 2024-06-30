@@ -5,9 +5,7 @@ import { Context } from "../../context/Context";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 // click to promt
-const handleCardClick = (promptText) => {
-			setInput(promptText);
-		};
+
 const Main = () => {
   const {
     onSent,
@@ -19,7 +17,11 @@ const Main = () => {
     setInput,
     input,
   } = React.useContext(Context);
-  return (
+	const handleCardClick = (promptText) => {
+			setInput(promptText);
+		};
+  return
+	  (
     <div className="main">
       <div className="nav">
         <p>AskAi</p>
