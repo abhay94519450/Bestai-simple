@@ -5,25 +5,6 @@ import { Context } from "../../context/Context";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
 // speech import
-import SpeechRecognition, {
-  useSpeechRecognition,
-} from "react-speech-recognition";
-// const voice
-const { transcript, listening, browserSupportsSpeechRecognition } =
-    useSpeechRecognition();
-// const work voice 
-const speakNow = () => {
-    if (!browserSupportsSpeechRecognition) {
-      alert("Your Browser doesn't support speech recognition.");
-      return;
-    }
-
-    SpeechRecognition.startListening();
-  };
-
-  useEffect(()=>{
-    setInput(transcript)
-  }, [transcript])
 
 const Main = () => {
   const {
@@ -54,7 +35,7 @@ const Main = () => {
               <p>How can I help you today?</p>
             </div>
             <div className="cards">
-              <div className="card">
+           <div className="card">
                 <p>Draft an email with a packing list for an upcoming trip</p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
@@ -121,17 +102,17 @@ const Main = () => {
               <span>
                 {" "}
                 <img
-                  src={assets.mic_icon}
-                  alt=""
-                  onClick={speakNow}
-                  data-tooltip-id="use-microphone"
-                  data-tooltip-content="Use microphone"
-                />
-                <Tooltip
-                  id="use-microphone"
-                  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
-                />
-              </span>
+                 // src={assets.mic_icon}
+                 // alt=""
+                 // onClick={speakNow}
+                 // data-tooltip-id="use-microphone"
+                //  data-tooltip-content="Use microphone"
+              //  />
+               // <Tooltip
+                 // id="use-microphone"
+                //  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
+            //    />
+            //  </span>
               {input.length > 0 && (
                 <span className={`send-icon ${input.length > 0 ? "show" : ""}`}>
                   <img
@@ -156,12 +137,9 @@ const Main = () => {
             </div>
           </div>
           <p className="bottom-info">
-            Gemini may display inaccurate info, including about people, so
+            AskAi may display inaccurate info, including about people, so
             double-check its responses.{" "}
-            <a href="https://support.google.com/gemini?p=privacy_notice">
-              Your privacy and Gemini Apps
-            </a>
-          </p>
+           </p>
         </div>
       </div>
     </div>
