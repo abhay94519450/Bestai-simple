@@ -4,7 +4,10 @@ import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-
+// click to promt
+const handleCardClick = (promptText) => {
+			setInput(promptText);
+		};
 const Main = () => {
   const {
     onSent,
@@ -34,8 +37,11 @@ const Main = () => {
               <p>How can I help you today?</p>
             </div>
             <div className="cards">
-              <div className="card">
-                <p>How to Propose Girlfriend Without saying directly </p>
+              <div className="card" onClick={() =>
+									handleCardClick("Suggest Some Place To Visit In Kerala")
+								}
+							 >
+                
                 <img src={assets.bulb_icon} alt="" />
               </div>
               <div className="card">
