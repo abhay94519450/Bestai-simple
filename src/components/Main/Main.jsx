@@ -64,11 +64,11 @@ const Main = () => {
               </div>
 		    
               <div className="card" onClick={() =>
-									handleCardClick("I'm passionate about editing and want to pursue it as a career.")
+									handleCardClick("How AI will replace many human jobs?")
 								}
 							 >
-                <p>I'm passionate about editing and want to pursue it as a career.</p>
-                <img src={assets.image_icon} alt="" />
+                <p> How AI will replace many human jobs?</p>
+                <img src={assets.message_icon} alt="" />
               </div>
             </div>
           </>
