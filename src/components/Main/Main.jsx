@@ -95,18 +95,8 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              <span>
-                <img
-                  src={assets.gallery_icon}
-                  alt=""
-                  data-tooltip-id="upload-image"
-                  data-tooltip-content="Upload image"
-                />
-                <Tooltip
-                  id="upload-image"
-                  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
-                />
-              </span>
+              
+            
               <span>
                 {" "}
                 <img
