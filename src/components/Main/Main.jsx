@@ -41,6 +41,7 @@ const Main = () => {
 									handleCardClick("Suggest Some Place To Visit In Kerala")
 								}
 							 >
+		      <p> kerala </p>
                 
                 <img src={assets.bulb_icon} alt="" />
               </div>
