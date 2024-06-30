@@ -4,6 +4,26 @@ import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
+// speech import
+import SpeechRecognition, {
+  useSpeechRecognition,
+} from "react-speech-recognition";
+// const voice
+const { transcript, listening, browserSupportsSpeechRecognition } =
+    useSpeechRecognition();
+// const work voice 
+const speakNow = () => {
+    if (!browserSupportsSpeechRecognition) {
+      alert("Your Browser doesn't support speech recognition.");
+      return;
+    }
+
+    SpeechRecognition.startListening();
+  };
+
+  useEffect(()=>{
+    setInput(transcript)
+  }, [transcript])
 
 const Main = () => {
   const {
@@ -19,7 +39,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>Gemini</p>
+        <p>Ask Ai</p>
         <a target="_blank" href="https://accounts.google.com/">
           <img src={assets.user_icon} alt="" />
         </a>
@@ -29,7 +49,7 @@ const Main = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, Priyanshu</span>
+                <span>Hello, Dear</span>
               </p>
               <p>How can I help you today?</p>
             </div>
@@ -95,23 +115,15 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              <span>
-                <img
-                  src={assets.gallery_icon}
-                  alt=""
-                  data-tooltip-id="upload-image"
-                  data-tooltip-content="Upload image"
-                />
-                <Tooltip
-                  id="upload-image"
-                  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
-                />
-              </span>
+              
+               
+    
               <span>
                 {" "}
                 <img
                   src={assets.mic_icon}
                   alt=""
+                  onClick={speakNow}
                   data-tooltip-id="use-microphone"
                   data-tooltip-content="Use microphone"
                 />
