@@ -4,7 +4,6 @@ import { assets } from "../../assets/assets";
 import { Context } from "../../context/Context";
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip } from "react-tooltip";
-// speech import
 
 const Main = () => {
   const {
@@ -20,7 +19,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>Ask Ai</p>
+        <p>AskAi</p>
         <a target="_blank" href="https://accounts.google.com/">
           <img src={assets.user_icon} alt="" />
         </a>
@@ -35,7 +34,7 @@ const Main = () => {
               <p>How can I help you today?</p>
             </div>
             <div className="cards">
-           <div className="card">
+              <div className="card">
                 <p>Draft an email with a packing list for an upcoming trip</p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
@@ -96,23 +95,31 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              
-               
-    
+              <span>
+                <img
+                  src={assets.gallery_icon}
+                  alt=""
+                  data-tooltip-id="upload-image"
+                  data-tooltip-content="Upload image"
+                />
+                <Tooltip
+                  id="upload-image"
+                  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
+                />
+              </span>
               <span>
                 {" "}
                 <img
-                 // src={assets.mic_icon}
-                 // alt=""
-                 // onClick={speakNow}
-                 // data-tooltip-id="use-microphone"
-                //  data-tooltip-content="Use microphone"
-              //  />
-               // <Tooltip
-                 // id="use-microphone"
-                //  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
-            //    />
-            //  </span>
+                  src={assets.mic_icon}
+                  alt=""
+                  data-tooltip-id="use-microphone"
+                  data-tooltip-content="Use microphone"
+                />
+                <Tooltip
+                  id="use-microphone"
+                  style={{ padding: "5px", fontSize: "12px", color: "#f0f4f9" }}
+                />
+              </span>
               {input.length > 0 && (
                 <span className={`send-icon ${input.length > 0 ? "show" : ""}`}>
                   <img
@@ -139,7 +146,8 @@ const Main = () => {
           <p className="bottom-info">
             AskAi may display inaccurate info, including about people, so
             double-check its responses.{" "}
-           </p>
+            
+          </p>
         </div>
       </div>
     </div>
