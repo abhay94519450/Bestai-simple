@@ -136,6 +136,9 @@ const Main = () => {
           <p className="bottom-info">
             AskAi may display inaccurate info, including about people, so
             double-check its responses.{" "}
+            <a href="https://abhaypp.com">
+              Made with ❤️
+            </a>
             
           </p>
         </div>
