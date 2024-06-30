@@ -35,19 +35,19 @@ const Main = () => {
             </div>
             <div className="cards">
               <div className="card">
-                <p>Draft an email with a packing list for an upcoming trip</p>
+                <p>How to Propose Girlfriend Without saying directly </p>
                 <img src={assets.bulb_icon} alt="" />
               </div>
               <div className="card">
-                <p>Explain the following code step-by-step in detail</p>
+                <p>Explain the steps to make gf</p>
                 <img src={assets.code_icon} alt="" />
               </div>
               <div className="card">
-                <p>Help me get organized with a list of 10 tips</p>
+                <p>Help me get 100 out of 100 marks in class using notes.abhaypp.com</p>
                 <img src={assets.compass_icon} alt="" />
               </div>
               <div className="card">
-                <p>Create an image & bedtime story</p>
+                <p>What is abhaypp.com</p>
                 <img src={assets.image_icon} alt="" />
               </div>
             </div>
